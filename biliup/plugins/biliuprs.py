@@ -134,6 +134,10 @@ def stream_gears_upload(ex_conn, lines, *args, **kwargs):
             kwargs['line'] = stream_gears.UploadLine.Tx
         elif lines == 'bldsa':
             kwargs['line'] = stream_gears.UploadLine.Bldsa
+      # elif lines == 'cos':
+          # kwargs['line'] = stream_gears.UploadLine.Cos
+      # elif lines == 'cos-internal':
+          # kwargs['line'] = stream_gears.UploadLine.CosInternal
 
         stream_gears.upload(*args, **kwargs)
     except Exception as e:
