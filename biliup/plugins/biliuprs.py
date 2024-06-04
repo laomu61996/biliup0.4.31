@@ -122,14 +122,16 @@ def stream_gears_upload(ex_conn, lines, *args, **kwargs):
             kwargs['line'] = stream_gears.UploadLine.Kodo
         elif lines == 'bda2':
             kwargs['line'] = stream_gears.UploadLine.Bda2
+        elif lines == 'bda':
+            kwargs['line'] = stream_gears.UploadLine.Bda
         elif lines == 'ws':
             kwargs['line'] = stream_gears.UploadLine.Ws
         elif lines == 'qn':
             kwargs['line'] = stream_gears.UploadLine.Qn
-        elif lines == 'cos':
-            kwargs['line'] = stream_gears.UploadLine.Cos
-        elif lines == 'cos-internal':
-            kwargs['line'] = stream_gears.UploadLine.CosInternal
+        elif lines == 'txa':
+            kwargs['line'] = stream_gears.UploadLine.Txa
+        elif lines == 'tx':
+            kwargs['line'] = stream_gears.UploadLine.Tx
         elif lines == 'bldsa':
             kwargs['line'] = stream_gears.UploadLine.Bldsa
 
