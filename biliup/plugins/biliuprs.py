@@ -138,7 +138,9 @@ def stream_gears_upload(ex_conn, lines, *args, **kwargs):
           # kwargs['line'] = stream_gears.UploadLine.Cos
       # elif lines == 'cos-internal':
           # kwargs['line'] = stream_gears.UploadLine.CosInternal
-
+      # elif lines == 'kodo':
+          # kwargs['line'] = stream_gears.UploadLine.Kodo
+        
         stream_gears.upload(*args, **kwargs)
     except Exception as e:
         ex_conn.send(e)
